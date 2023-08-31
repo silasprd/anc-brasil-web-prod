@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root{
+  --text-primary-color: #16163f;
+
+  --h5-size: 16px;
+
+  --text-roboto: "Roboto", Sans-serif;
+
+  --background-color: #F4F4F4;
+  --primary-orange: #F28838;
+
+  --nav-height: 65px;
+}

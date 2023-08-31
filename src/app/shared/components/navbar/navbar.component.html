@@ -1,0 +1,53 @@
+<div class="nav-bar-container">
+  <div class="nav-bar-logo">
+    <figure>
+      <img [src]="imgLogo" alt="ANC-LOGO" width="214" height="47" />
+    </figure>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-item" routerLink="/inicio">
+      <span>Home</span>
+    </div>
+    <div class="nav-item" routerLink="/sobre">
+      <span>Sobre</span>
+    </div>
+    <div class="nav-item" routerLink="/blog">
+      <span>Blog</span>
+    </div>
+    <div class="nav-item" routerLink="/fale-conosco">
+      <span>Fale conosco</span>
+    </div>
+  </div>
+
+  <div class="nav-bar-social-media">
+    <span class="material-icons" [matMenuTriggerFor]="nav"> menu </span>
+    <mat-menu #nav="matMenu">
+      <button mat-menu-item routerLink="/inicio">Home</button>
+      <button mat-menu-item routerLink="/sobre">Sobre</button>
+      <button mat-menu-item routerLink="/blog">Blog</button>
+      <button mat-menu-item routerLink="/fale-conosco">Fale conosco</button>
+    </mat-menu>
+    <a
+      href="https://www.facebook.com/profile.php?id=100080789555081"
+      target="_blank"
+    >
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/anc_oficial_/" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <i
+      class="material-icons"
+      style="font-size: 42px"
+      [matMenuTriggerFor]="user"
+    >
+      manage_accounts
+    </i>
+    <mat-menu #user="matMenu">
+      <button mat-menu-item>Login</button>
+      <button mat-menu-item>Perfil</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+  </div>
+</div>
