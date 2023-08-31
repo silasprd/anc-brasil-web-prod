@@ -7,7 +7,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 const routes: Routes = [
   {
-    path: 'inicio',
+    path: '',
     component: HomeComponent
   },
   {
