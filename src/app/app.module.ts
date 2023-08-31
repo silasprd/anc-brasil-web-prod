@@ -13,6 +13,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { ContentCardComponent } from './shared/components/content-card/content-card.component';
+import { TopSectionComponent } from './pages/home/top-section/top-section.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     HomeComponent,
     AboutComponent,
     BlogComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ContentCardComponent,
+    TopSectionComponent
   ],
   imports: [
     BrowserModule,
