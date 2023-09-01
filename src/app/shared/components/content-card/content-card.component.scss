@@ -22,8 +22,8 @@
       background-color: var(--primary-orange);
       margin-top: 48px;
       border-radius: 10px;
-      width: 320px;
       height: 170px;
+      width: 25vw;
       p{
         font-size: var(--h1-size);
         margin-block: 0;
@@ -39,5 +39,20 @@
   .mat-typography p {
     margin: 0;
     font: 400 32px Roboto, "Helvetica Neue", sans-serif;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-box{
+    padding: 5px !important;
+    .card-icon{
+      padding: 0;
+      .content{
+        width: 30vw;
+        p{
+          font-size: var(--h2-size);
+        }
+      }
+    }
   }
 }

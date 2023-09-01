@@ -15,6 +15,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ContentCardComponent } from './shared/components/content-card/content-card.component';
 import { TopSectionComponent } from './pages/home/top-section/top-section.component';
+import { AboutSectionComponent } from './pages/home/about-section/about-section.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TopSectionComponent } from './pages/home/top-section/top-section.compon
     BlogComponent,
     ContactUsComponent,
     ContentCardComponent,
-    TopSectionComponent
+    TopSectionComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
