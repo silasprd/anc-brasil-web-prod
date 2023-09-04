@@ -6,9 +6,10 @@
       height: 100%;
       .background-section{
         height: 100%;
-        background-image: url("../../../../assets/about-section-background.jpg");
+        background-image: url("/assets/about-section-background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center center;
         .background-image{
           display: flex;
           justify-content: center;
@@ -24,7 +25,7 @@
               margin-bottom: 40px;
             }
             p{
-              padding: 0 120px 120px 120px;
+              padding: 0 120px 190px 120px;
               line-height: 1.8em;
               font-size: var(--h4-size);
             }
@@ -32,6 +33,10 @@
         }
       }
     }
+  }
+  .news-section{
+    position: relative;
+    top: -100px;
   }
 }
 

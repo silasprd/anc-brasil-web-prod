@@ -1,3 +1,4 @@
+import { NewsSectionComponent } from './pages/home/news-section/news-section.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
 
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -16,6 +18,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ContentCardComponent } from './shared/components/content-card/content-card.component';
 import { TopSectionComponent } from './pages/home/top-section/top-section.component';
 import { AboutSectionComponent } from './pages/home/about-section/about-section.component';
+import { NewsCardComponent } from './shared/components/news-card/news-card.component';
 
 
 @NgModule({
@@ -28,14 +31,17 @@ import { AboutSectionComponent } from './pages/home/about-section/about-section.
     ContactUsComponent,
     ContentCardComponent,
     TopSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    NewsSectionComponent,
+    NewsCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
