@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -19,6 +20,7 @@ import { ContentCardComponent } from './shared/components/content-card/content-c
 import { TopSectionComponent } from './pages/home/top-section/top-section.component';
 import { AboutSectionComponent } from './pages/home/about-section/about-section.component';
 import { NewsCardComponent } from './shared/components/news-card/news-card.component';
+import { PartnersSectionComponent } from './pages/home/partners-section/partners-section.component';
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import { NewsCardComponent } from './shared/components/news-card/news-card.compo
     TopSectionComponent,
     AboutSectionComponent,
     NewsSectionComponent,
+    PartnersSectionComponent,
     NewsCardComponent
   ],
   imports: [
@@ -41,7 +44,8 @@ import { NewsCardComponent } from './shared/components/news-card/news-card.compo
     BrowserAnimationsModule,
     MatTabsModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

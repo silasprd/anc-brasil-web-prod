@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="frame-content">
+    <div class="frame">
+      <iframe src="https://www.youtube.com/embed/MLpWrANjFbI?si=rdI7j508RvEFlPPr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      </p>
+    </div>
+  </div>
+  <div class="partners-content">
+    <div class="title">
+      <h1>Parceiros</h1>
+      <h4>Venha ser nosso parceiro</h4>
+    </div>
+    <div class="partners">
+      <div class="carousel-container">
+        <mat-card class="carousel-card" *ngFor="let image of images; let i = index">
+          <img [src]="image" alt="Imagem do Carrossel">
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

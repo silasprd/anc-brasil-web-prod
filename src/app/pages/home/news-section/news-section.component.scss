@@ -20,4 +20,30 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
   }
+
+  .propose-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 7% 0 2% 0;
+    article{
+      width: 100%;
+      h1{
+        font-size: var(--h0-size);
+        color: var(--text-primary-color-2);
+      }
+      p{
+        font-size: var(--h5-size);
+        color: var(--text-gray-2);
+        margin: 35px 0;
+      }
+      hr{
+        width: 50%;
+        height: 7px;
+        border-radius: 10px;
+        border: none;
+        background-image: linear-gradient(45deg, #00FF0F 50%, #fcb900 50%);
+      }
+    }
+  }
 }
