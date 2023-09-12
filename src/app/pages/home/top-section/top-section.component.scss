@@ -1,0 +1,21 @@
+.container{
+  .div-section{
+    .section{
+      .background-container{
+        width: 100%;
+        height: 600px;
+        background-image: url('https://ancbrasil.org.br/wp-content/uploads/2021/09/estudantes.jpg');
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .card-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 77%;
+      }
+    }
+
+  }
+}

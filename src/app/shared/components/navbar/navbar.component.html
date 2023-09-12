@@ -6,7 +6,7 @@
   </div>
 
   <div class="nav-bar">
-    <div class="nav-item" routerLink="/inicio">
+    <div class="nav-item" routerLink="/">
       <span>Home</span>
     </div>
     <div class="nav-item" routerLink="/sobre">
@@ -21,7 +21,7 @@
   </div>
 
   <div class="nav-bar-social-media">
-    <span class="material-icons" [matMenuTriggerFor]="nav"> menu </span>
+    <span class="material-icons-outlined" [matMenuTriggerFor]="nav"> menu </span>
     <mat-menu #nav="matMenu">
       <button mat-menu-item routerLink="/inicio">Home</button>
       <button mat-menu-item routerLink="/sobre">Sobre</button>
@@ -38,7 +38,7 @@
       <i class="fa-brands fa-instagram"></i>
     </a>
     <i
-      class="material-icons"
+      class="material-icons-outlined"
       style="font-size: 42px"
       [matMenuTriggerFor]="user"
     >

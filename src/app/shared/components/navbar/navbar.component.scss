@@ -87,6 +87,8 @@
 @media screen and (max-width: 768px){
 
   .nav-bar-container{
+    flex-direction: column;
+    height: auto;
     .nav-bar-social-media{
       span{
         display: block !important;
