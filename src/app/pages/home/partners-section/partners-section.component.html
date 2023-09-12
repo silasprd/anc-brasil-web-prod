@@ -16,9 +16,17 @@
     </div>
     <div class="partners">
       <div class="carousel-container">
-        <mat-card class="carousel-card" *ngFor="let image of images; let i = index">
-          <img [src]="image" alt="Imagem do Carrossel">
-        </mat-card>
+        <span class="material-icons-outlined" (click)="moveToLeft()">
+          arrow_circle_left
+        </span>
+        <div class="img-list">
+          <mat-card class="carousel-card" *ngFor="let image of images.slice(imgIndex, imgIndex + 3)">
+            <img [src]="image" alt="Imagem do Carrossel">
+          </mat-card>
+        </div>
+        <span class="material-icons-outlined" (click)="moveToRight()">
+          arrow_circle_right
+        </span>
       </div>
     </div>
   </div>

@@ -29,7 +29,7 @@
   .partners-content{
     display: flex;
     width: 80%;
-    margin: 40px 0;
+    margin: 120px 0 200px 0;
     .title{
       padding: 30px;
       h1{
@@ -44,10 +44,24 @@
     .partners{
       width: 100%;
       .carousel-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        column-gap: 20px;
-        row-gap: 20px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0 50px;
+        .img-list{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 20px;
+          row-gap: 20px;
+        }
+        span{
+          margin: 0 20px;
+          color: var(--text-gray-2);
+          cursor: pointer;
+          &:hover{
+            color: var(--primary-orange);
+          }
+        }
         .carousel-card {
           img{
             width: 100%;
@@ -58,4 +72,25 @@
     }
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .frame-content{
+    flex-direction: column;
+    .frame, .text{
+      width: 100% !important;
+    }
+  }
+  .partners-content{
+    flex-direction: column;
+    width: 100% !important;
+    .partners{
+      .carousel-container {
+        margin: 0 !important;
+        .img-list{
+          grid-template-columns: repeat(3, 1fr) !important; /* Uma coluna em telas menores */
+        }
+      }
+    }
+  }
 }

@@ -12,6 +12,8 @@ export class PartnersSectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  imgIndex: number = 0
+
   images = [
     'assets/ARMOND.png',
     'assets/BASTIL.png',
@@ -21,4 +23,16 @@ export class PartnersSectionComponent implements OnInit {
     'assets/GEO.png',
     'assets/MADRIN.png'
   ]
+
+  moveToRight() {
+    if (this.imgIndex < this.images.length - 3) {
+      this.imgIndex++;
+    }
+  }
+
+  moveToLeft() {
+    if (this.imgIndex > 0) {
+      this.imgIndex--;
+    }
+  }
 }

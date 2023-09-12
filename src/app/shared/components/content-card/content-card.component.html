@@ -1,14 +1,18 @@
-<div class="card-box">
+<div class="card-box" id="card-box">
   <div class="card-icon">
     <div class="icon">
       <span class="material-icons-outlined">
         local_library
       </span>
     </div>
-    <div class="content">
+    <div class="content" id="content-card-component">
+      <h3>
+        {{cardTitle}}
+      </h3>
       <p>
-        {{cardTextContent}}
+        {{textContent}}
       </p>
+      <button *ngIf="hasButton">{{textButton}}</button>
     </div>
   </div>
 </div>
