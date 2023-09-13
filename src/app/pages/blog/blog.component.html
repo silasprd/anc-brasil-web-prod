@@ -1,3 +1,66 @@
-<p>
-  blog works!
-</p>
+<div class="container">
+  <div class="blog-list">
+    <mat-card>
+        <mat-card-content class="list">
+          <app-news-card
+            title="Aventura Cultural da Cidade – FELIZ CIDADE"
+            [img]="imgs[0]"
+            [content]="contents[0]">
+          </app-news-card>
+          <app-news-card
+            title="Pessoas físicas podem doar até 6% do que pagarão à Receita Federal"
+            [img]="imgs[1]"
+            [content]="contents[1]">
+          </app-news-card>
+          <app-news-card
+            title="Curso Excelência no Atendimento ao Cidadão"
+            [img]="imgs[2]"
+            [content]="contents[2]">
+          </app-news-card>
+        </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="filter-list">
+    <mat-card class="main-card">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title>PESQUISAR</mat-card-title>
+          </mat-card-header>
+      </mat-card>
+      <mat-card class="search-filter">
+        <mat-card-content>
+          <mat-card-title>
+            <form [formGroup]="filterGroup" class="filter-form">
+              <div class="input-field">
+                <input placeholder="Pesquisar" formControlName="filterControl">
+                <div class="search-button">
+                  <span class="material-icons-outlined">search</span>
+                </div>
+              </div>
+            </form>
+          </mat-card-title>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-header>
+            <mat-card-title>CATEGORIAS</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+      <mat-card class="category-list">
+        <mat-card-content>
+          <ul>
+            <li *ngFor="let category of categories">
+              <span class="material-icons-outlined">
+                folder
+              </span>
+              <h3>
+                {{category}}
+              </h3>
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </mat-card>
+  </div>
+</div>
