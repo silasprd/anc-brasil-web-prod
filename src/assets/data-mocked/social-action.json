@@ -1,0 +1,37 @@
+[
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/08-300x211.jpg",
+    "title": "Mãos Solidárias: Voluntariado na Terceira Idade",
+    "local": "Instituto Ações Sociais Vó Tutu",
+    "date": "20/03/2023",
+    "describe": "O projeto é uma oportunidade única para estender uma mão amiga à geração mais experiente da nossa comunidade. Junte-se a nós e compartilhe seu tempo, carinho e habilidades com os idosos, proporcionando momentos especiais e criando laços intergeracionais que enriquecem vidas."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2022/03/homem-feliz-500x250.jpg",
+    "title": "Aventura Cultural da Cidade - FELIZ CIDADE",
+    "local": "Teatro Cassiano Ricardo",
+    "date": "31/01/2024",
+    "describe": "O projeto cultural FELIZCIDADE foi desenvolvido pela ANC para a valorização da cidadania com: cultura, lazer e entretenimento para o cidadão."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2022/03/mao-com-moedas-500x250.jpg",
+    "title": "Pessoas físicas podem doar até 6% do que pagarão à Receita Federal",
+    "local": "Solar Social",
+    "date": "11/10/2023",
+    "describe": "Descubra o poder da doação com impacto financeiro. Saiba como pessoas físicas podem fazer a diferença ao destinarem até 6% do imposto devido à Receita Federal para apoiar projetos sociais e causas que importam. Participe e contribua para construir um futuro melhor por meio da sua declaração de imposto de renda."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/01-300x211.jpg",
+    "title": "Ações Verdes: Preservação Ambiental na Comunidade",
+    "local": "Casa da Juventude",
+    "date": "15/08/2023",
+    "describe": "Junte-se ao movimento, e seja um guardião do nosso meio ambiente. Este projeto é dedicado à preservação ambiental local, promovendo a conscientização e a ação comunitária para um futuro mais sustentável. Faça parte desta jornada e ajude a proteger a natureza que todos compartilhamos."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/07-300x211.jpg",
+    "title": "Abrace uma Criança: Natal Solidário",
+    "local": "Casa da Juventude",
+    "date": "22/12/2023",
+    "describe": "Espalhamos a magia do Natal para crianças em situação de vulnerabilidade. Com a doação de presentes e carinho, estamos tornando a época natalina mais especial e calorosa para esses pequenos corações."
+  }
+]

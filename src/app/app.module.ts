@@ -17,14 +17,17 @@ import { MatInputModule } from '@angular/material/input';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { BlogComponent } from './pages/blog/blog.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ContentCardComponent } from './shared/components/content-card/content-card.component';
 import { TopSectionComponent } from './pages/home/top-section/top-section.component';
 import { AboutSectionComponent } from './pages/home/about-section/about-section.component';
-import { NewsCardComponent } from './shared/components/news-card/news-card.component';
 import { PartnersSectionComponent } from './pages/home/partners-section/partners-section.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { ClassesComponent } from './pages/classes/classes.component';
+import { ClassesCardComponent } from './shared/components/classes-card/classes-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SocialActionComponent } from './pages/social-action/social-action.component';
+import { SocialCardComponent } from './shared/components/social-card/social-card.component';
 
 
 @NgModule({
@@ -34,14 +37,16 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    BlogComponent,
     ContactUsComponent,
     ContentCardComponent,
     TopSectionComponent,
     AboutSectionComponent,
     NewsSectionComponent,
     PartnersSectionComponent,
-    NewsCardComponent
+    ClassesCardComponent,
+    ClassesComponent,
+    SocialCardComponent,
+    SocialActionComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

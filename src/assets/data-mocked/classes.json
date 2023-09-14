@@ -1,0 +1,52 @@
+[
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2022/03/professora-e-aluna.jpg",
+    "title": "Jardinagem na prática",
+    "name":"Jardinagem e paisagismo",
+    "local": "Av. Pedro Alvares Cabral - Centro de cultura e área verde",
+    "date": "30/11/2023",
+    "duration": "8h",
+    "vacancies": "15",
+    "describe": "O Curso de Jardinagem e Paisagismo é projetado para entusiastas da natureza, amantes de plantas e aqueles que desejam transformar espaços verdes em verdadeiros paraísos naturais. Se você está buscando conhecimento prático e teórico sobre o cultivo de plantas, design de jardins e paisagismo, este curso é ideal para você."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/04-300x211.jpg",
+    "title": "Se tornando referência no Ambiente de Trabalho",
+    "name": "Liderança no Ambiente de Trabalho",
+    "local": "Av. Pedro Alvares Cabral - Centro de cultura e área verde",
+    "date": "15/10/2023",
+    "duration": "15h",
+    "vacancies": "15",
+    "describe": "O Curso de Jardinagem e Paisagismo é projetado para entusiastas da natureza, amantes de plantas e aqueles que desejam transformar espaços verdes em verdadeiros paraísos naturais. Se você está buscando conhecimento prático e teórico sobre o cultivo de plantas, design de jardins e paisagismo, este curso é ideal para você."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/07-300x211.jpg",
+    "title": "Melhorando os meios de comunicação",
+    "name":"Efetividade na Comunicação Corporativa",
+    "local": "Av. Pedro Alvares Cabral - Centro de cultura e área verde",
+    "date": "30/11/2023",
+    "duration": "8h",
+    "vacancies": "10",
+    "describe": "O Curso de Jardinagem e Paisagismo é projetado para entusiastas da natureza, amantes de plantas e aqueles que desejam transformar espaços verdes em verdadeiros paraísos naturais. Se você está buscando conhecimento prático e teórico sobre o cultivo de plantas, design de jardins e paisagismo, este curso é ideal para você."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/06-300x211.jpg",
+    "title": "Seja mais produtivo",
+    "name":"Gerenciamento de Tempo e Produtividade",
+    "local": "Av. Pedro Alvares Cabral - Centro de cultura e área verde",
+    "date": "28/09/2023",
+    "duration": "20h",
+    "vacancies": "8",
+    "describe": "O Curso de Jardinagem e Paisagismo é projetado para entusiastas da natureza, amantes de plantas e aqueles que desejam transformar espaços verdes em verdadeiros paraísos naturais. Se você está buscando conhecimento prático e teórico sobre o cultivo de plantas, design de jardins e paisagismo, este curso é ideal para você."
+  },
+  {
+    "img": "https://ancbrasil.org.br/wp-content/uploads/2021/10/05-300x211.jpg",
+    "title": "Desenvolvimento de estratégias empresariais sólidas",
+    "name": "Gestão de Projetos e Planejamento Estratégico",
+    "local": "Av. Pedro Alvares Cabral - Centro de cultura e área verde",
+    "date": "02/10/2023",
+    "duration": "30h",
+    "vacancies": "10",
+    "describe": "Oferece uma abordagem abrangente e prática para a gestão eficaz de projetos e o desenvolvimento de estratégias empresariais sólidas. Este programa de treinamento foi projetado para capacitar profissionais e líderes com as habilidades essenciais necessárias para planejar, executar e monitorar projetos de forma eficiente, alinhados com os objetivos estratégicos de uma organização."
+  }
+]
