@@ -28,6 +28,16 @@
       p{
         font-size: var(--h6-size);
         color: var(--text-gray-2);
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 4em;
+        padding: 10px 0;
+      }
+      strong, span{
+        color: var(--text-gray);
       }
     }
     h5{

@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  .blog-list{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 16px;
+    .top{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .top-input{
+        display: flex;
+        margin-bottom: 10px;
+        box-shadow: 4px 4px 4px 0 #00000020;
+        border-radius: 7px;
+        input{
+          padding: 7px 10px;
+          font-size: var(--h5-size);
+          border-radius: 7px 0 0 7px;
+          border: 1px solid var(--primary-orange);
+          border-right: none;
+        }
+        span{
+          background-color: var(--primary-orange);
+          color: var(--text-light-color);
+          display: flex;
+          align-items: center;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 0 7px 7px 0;
+          border: 1px solid var(--primary-orange);
+        }
+      }
+      .title{
+        color: var(--text-gray);
+        width: 100%;
+        mat-card-title{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          font-size: var(--h2-size);
+          margin: 0 !important;
+        }
+      }
+    }
+    .list{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+}

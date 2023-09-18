@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="blog-list">
+    <mat-card>
+      <br />
+      <div class="top">
+        <mat-card-header class="title">
+          <mat-card-title>
+            <span>Ações Sociais</span>
+          </mat-card-title>
+        </mat-card-header>
+        <div class="top-input">
+          <input type="text" placeholder="Pesquisar">
+          <span class="material-icons-outlined">
+            search
+          </span>
+        </div>
+      </div>
+      <mat-card-content class="list">
+        <div *ngFor="let action of socialActions; let i = index">
+          <app-social-card
+            [img]="action.img"
+            [title]="action.title"
+            [local]="action.local ?? 'A definir'"
+            [date]="action.date ?? 'A definir'"
+            [describe]="action.describe ?? '...'">
+          </app-social-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

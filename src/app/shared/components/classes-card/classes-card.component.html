@@ -1,0 +1,33 @@
+<div class="card">
+  <mat-card class="card-content">
+    <figure>
+      <img [src]="img" alt="">
+    </figure>
+    <mat-card-header>
+      <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>
+        <strong>Nome do curso: </strong><span>{{className}}</span>
+      </div>
+      <div>
+        <strong>Local: </strong><span>{{local}}</span>
+      </div>
+      <div>
+        <strong>Data: </strong><span>{{date}}</span>
+      </div>
+      <div>
+        <strong>Duração: </strong><span>{{duration}}</span>
+      </div>
+      <div>
+        <strong>Vagas: </strong><span>{{vacancy}}</span>
+      </div>
+      <div>
+        <p>
+          {{describe}}
+        </p>
+      </div>
+    </mat-card-content>
+    <h5>Saiba mais >></h5>
+  </mat-card>
+</div>

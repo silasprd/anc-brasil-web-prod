@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="blog-list">
+    <mat-card>
+      <br />
+      <div class="top">
+        <mat-card-header class="title">
+          <mat-card-title>
+            <span>Cursos</span>
+          </mat-card-title>
+        </mat-card-header>
+        <div class="top-input">
+          <input type="text" placeholder="Pesquisar">
+          <span class="material-icons-outlined">
+            search
+          </span>
+        </div>
+      </div>
+      <mat-card-content class="list">
+        <div *ngFor="let classe of classes; let i = index">
+          <app-classes-card
+            [title]="classe.title"
+            [img]="classe.img"
+            [className]="classe.name"
+            [local]="classe.local ?? 'A definir'"
+            [date]="classe.date ?? 'A definir'"
+            [duration]="classe.duration ?? 'A definir'"
+            [vacancy]="classe.vacancies ?? 'A definir'"
+            [describe]="classe.describe ?? '...'"
+          >
+          </app-classes-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
