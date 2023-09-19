@@ -28,6 +28,7 @@ import { ClassesCardComponent } from './shared/components/classes-card/classes-c
 import { HttpClientModule } from '@angular/common/http';
 import { SocialActionComponent } from './pages/social-action/social-action.component';
 import { SocialCardComponent } from './shared/components/social-card/social-card.component';
+import { PainelModule } from './painel/painel.module';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { SocialCardComponent } from './shared/components/social-card/social-card
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    PainelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

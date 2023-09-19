@@ -1,0 +1,28 @@
+.sidenav {
+  ul {
+    list-style: none;
+  }
+  .nav-list {
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--text-primary-color);
+    font-size: var(--h5-size);
+    li {
+      background-color: var(--background-color);
+      border: 1px solid #00000030;
+      padding: 10px 30px;
+      cursor: pointer;
+    }
+    li:nth-child(even) {
+      border-left: none;
+    }
+  }
+}
+.button-menu {
+  button {
+    border: 1px solid #00000030;
+    cursor: pointer;
+    color: var(--text-primary-color);
+  }
+}
