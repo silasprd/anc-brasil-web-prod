@@ -1,3 +1,20 @@
-<p>
-  list-social-action works!
-</p>
+<div class="social-action-painel-container">
+  <mat-card class="social-action-painel-card">
+    <mat-card-header class="social-action-painel-header">
+      <mat-card-title class="social-action-painel-title">Gerenciar Ações Sociais</mat-card-title>
+      <span>Adicionar Nova Ação</span>
+    </mat-card-header>
+    <mat-card-content class="social-action-painel-content">
+      <div *ngFor="let action of socialActions; let i = index">
+        <app-social-card
+          [img]="action.img"
+          [title]="action.title"
+          [local]="action.local ?? 'A definir'"
+          [date]="action.date ?? 'A definir'"
+          [describe]="action.describe ?? '...'"
+        >
+        </app-social-card>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

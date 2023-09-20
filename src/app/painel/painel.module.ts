@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PainelRoutingModule } from './painel-routing.module';
 import { PainelComponent } from './painel.component';
 import { PainelBarComponent } from './painel-bar/painel-bar.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatMenuModule } from '@angular/material/menu';
 import { AddSocialActionComponent } from './components/add-social-action/add-social-action.component';
 import { ListSocialActionComponent } from './components/list-social-action/list-social-action.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -22,8 +21,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule,
     PainelRoutingModule,
-    MatSidenavModule,
-    MatMenuModule
-  ]
+    SharedModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PainelModule { }

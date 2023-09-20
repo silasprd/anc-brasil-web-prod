@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialAction } from 'src/app/models/SocialAction';
+import { SocialActionService } from 'src/app/service/social-action.service';
 
 @Component({
   selector: 'app-list-social-action',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListSocialActionComponent implements OnInit {
 
-  constructor() { }
+  socialActions: SocialAction[] = []
+
+  constructor(
+    private socialActionService: SocialActionService
+  ) { }
 
   ngOnInit() {
+    this.getSocialActions()
+  }
+
+  getSocialActions(): void{
+    this.socialActionService.findAll().subscribe({
+      next: (response) => {
+        console.log(response)
+        this.socialActions = response
+      }
+    })
   }
 
 }

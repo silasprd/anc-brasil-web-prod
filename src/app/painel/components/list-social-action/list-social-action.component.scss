@@ -1,0 +1,44 @@
+@import url('../../../../styles.scss');
+
+.social-action-painel-container{
+  padding: 40px;
+  .social-action-painel-card{
+    padding: 7px;
+    display: flex;
+    box-shadow: 2px 2px 4px 0 #00000030;
+    border-radius: 20px;
+    flex-direction: column;
+    .social-action-painel-header{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .social-action-painel-title{
+        font-size: var(--h3-size);
+        margin: 15px 0 10px 15px;
+        color: var(--text-primary-color);
+      }
+      span{
+        display: flex;
+        background-color: var(--primary-orange);
+        text-align: center;
+        align-items: center;
+        padding: 0 30px;
+        height: 35px;
+        margin-right: 15px;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-size: var(--h5-size);
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      span:hover{
+        color: var(--text-light-color);
+      }
+    }
+    .social-action-painel-content{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+}
