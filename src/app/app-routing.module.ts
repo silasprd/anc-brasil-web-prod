@@ -6,6 +6,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CommonModule } from '@angular/common';
 import { ClassesComponent } from './pages/classes/classes.component';
 import { SocialActionComponent } from './pages/social-action/social-action.component';
+import { PainelModule } from './painel/painel.module';
 
 const routes: Routes = [
   {
@@ -28,6 +29,7 @@ const routes: Routes = [
     path: 'cursos',
     component: ClassesComponent
   },
+  { path: 'painel', loadChildren: () => PainelModule }
 ];
 
 @NgModule({

@@ -1,0 +1,17 @@
+.add-social-action-container{
+  width: 600px;
+  form{
+    width: 100%;
+    .input-file{
+      label{
+        font-size: var(--h6-size);
+        color: var(--text-primary-color);
+        font-weight: 500;
+      }
+      input{
+        padding-top: 5px;
+        color: var(--text-primary-color);
+      }
+    }
+  }
+}

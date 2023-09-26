@@ -1,0 +1,41 @@
+<div class="add-social-action-container">
+  <h2 mat-dialog-title>Adicionar Ação Social</h2>
+  <mat-dialog-content class="mat-typography">
+    <form [formGroup]="socialActionForm">
+      <app-input-field
+        label="Título: "
+        placeholder="Informe o título da ação"
+        [control]="titleControl">
+      </app-input-field>
+      <app-input-field
+        label="Local: "
+        placeholder="Informe o local"
+        [control]="localControl">
+      </app-input-field>
+      <app-input-field
+        label="Data: "
+        placeholder="Informe a data"
+        [control]="dateControl"
+        type="date">
+      </app-input-field>
+
+      <div class="input-file">
+        <label class="">
+          Importar imagens:
+        </label><br>
+        <input
+          type="file"
+          placeholder="Importar imagens"
+          [formControl]="imgsControl"
+          multiple>
+        <br><br>
+      </div>
+
+      <app-input-button
+        buttonText="Salvar"
+        (click)="createSocialAction()">
+      </app-input-button>
+    </form>
+  </mat-dialog-content>
+</div>
+

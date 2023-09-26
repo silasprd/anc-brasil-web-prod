@@ -1,6 +1,6 @@
 export interface SocialAction {
 
-  img: string
+  imgs: string[]
   title: string
   local?: string
   date?: string
