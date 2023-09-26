@@ -18,7 +18,7 @@
       <mat-card-content class="list">
         <div *ngFor="let action of socialActions; let i = index">
           <app-social-card
-            [img]="action.img"
+            [img]="action.imgs[0]"
             [title]="action.title"
             [local]="action.local ?? 'A definir'"
             [date]="action.date ?? 'A definir'"

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-social-action',
@@ -7,9 +8,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddSocialActionComponent implements OnInit {
 
-  constructor() { }
+  socialActionForm!: FormGroup
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) { }
 
   ngOnInit() {
+    this.buildForm()
+  }
+
+  titleControl: FormControl = new FormControl("")
+  localControl: FormControl = new FormControl("")
+  dateControl: FormControl = new FormControl("")
+  imgsControl: FormControl = new FormControl("")
+
+  buildForm(): void {
+    this.socialActionForm = this.formBuilder.group({
+      title: this.titleControl.value,
+      local: this.localControl.value,
+      date: this.dateControl.value,
+      imgs: this.imgsControl.value
+    })
+  }
+
+  createSocialAction(){
+    const socialAction = {
+      title: this.titleControl.value,
+      local: this.localControl.value,
+      date: this.dateControl.value,
+      imgs: this.imgsControl.value
+    }
+    console.log(socialAction)
   }
 
 }

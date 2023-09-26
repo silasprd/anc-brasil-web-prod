@@ -3,9 +3,9 @@
 .social-action-painel-container{
   padding: 40px;
   .social-action-painel-card{
-    padding: 7px;
+    padding: 15px;
     display: flex;
-    box-shadow: 2px 2px 4px 0 #00000030;
+    box-shadow: 1px 1px 4px 0 #00000030;
     border-radius: 20px;
     flex-direction: column;
     .social-action-painel-header{
@@ -31,9 +31,10 @@
         font-size: var(--h5-size);
         font-weight: bolder;
         cursor: pointer;
+        box-shadow: 2px 2px 4px 0 #00000030;
       }
       span:hover{
-        color: var(--text-light-color);
+        color: var(--text-primary-color);
       }
     }
     .social-action-painel-content{
