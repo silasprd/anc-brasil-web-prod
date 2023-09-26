@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PainelComponent } from './painel.component';
-import { ListSocialActionComponent } from './components/list-social-action/list-social-action.component';
-import { AddSocialActionComponent } from './components/add-social-action/add-social-action.component';
+import { ListSocialActionComponent } from './components/social-action/list-social-action/list-social-action.component';
 import { CommonModule } from '@angular/common';
+import { ListCoursesComponent } from './components/courses/list-courses/list-courses.component';
 
 const routes: Routes = [
   {
@@ -16,7 +16,7 @@ const routes: Routes = [
       },
       {
         path: 'cursos',
-        component: AddSocialActionComponent
+        component: ListCoursesComponent
       }
     ]
   }

@@ -6,10 +6,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PainelRoutingModule } from './painel-routing.module';
 import { PainelComponent } from './painel.component';
 import { PainelBarComponent } from './components/painel-bar/painel-bar.component';
-import { AddSocialActionComponent } from './components/add-social-action/add-social-action.component';
-import { ListSocialActionComponent } from './components/list-social-action/list-social-action.component';
+import { AddSocialActionComponent } from './components/social-action/add-social-action/add-social-action.component';
+import { ListSocialActionComponent } from './components/social-action/list-social-action/list-social-action.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { ListCoursesComponent } from './components/courses/list-courses/list-courses.component';
+import { AddCoursesComponent } from './components/courses/add-courses/add-courses.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SharedModule } from '../shared/shared.module';
     PainelComponent,
     PainelBarComponent,
     AddSocialActionComponent,
-    ListSocialActionComponent
+    ListSocialActionComponent,
+    ListCoursesComponent,
+    AddCoursesComponent
   ],
   imports: [
     CommonModule,
